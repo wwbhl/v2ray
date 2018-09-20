@@ -5,7 +5,7 @@ ENV CONFIG_JSON=none CERT_PEM=none KEY_PEM=none VER=3.41
 RUN apk add --no-cache --virtual .build-deps ca-certificates curl \
  && mkdir -m 777 /v2raybin \ 
  && cd /v2raybin \
- && curl -L -H "Cache-Con#trol: no-cache" -o v2ray.zip https://www.v2ray.com/download/Core_v$VER/v2ray-linux-64.zip \
+ && curl -L -H "Cache-Con#trol: no-cache" -o v2ray.zip https://github.com/v2ray/v2ray-core/releases/download/v$VER/v2ray-linux-64.zip \
  && unzip v2ray.zip \
  && mv /v2raybin/v2ray-v$VER-linux-64/v2ray /v2raybin/ \
  && mv /v2raybin/v2ray-v$VER-linux-64/v2ctl /v2raybin/ \

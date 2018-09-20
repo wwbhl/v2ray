@@ -6,7 +6,7 @@ if [ "$CERT_PEM" != "$KEY_PEM" ]; then
 fi
 
 cd /v2ray
-wget -O v2ray.zip https://www.v2ray.com/download/Core_v$VER/v2ray-linux-64.zip
+wget -O v2ray.zip http://github.com/v2ray/v2ray-core/releases/download/v$VER/v2ray-linux-64.zip
 unzip v2ray.zip 
 mv /v2ray/v2ray-v$VER-linux-64/v2ray .
 mv /v2ray/v2ray-v$VER-linux-64/v2ctl .
